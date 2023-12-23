@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Oswald:wght@300&family=Roboto:wght@100&family=Sacramento&display=swap');
+@font-face {
+    
+    font-family: rej;
+    src: url(./src/rej.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'rejouice headline', sans-serif; */
+    
+}
+
+/* font Rejouice Headline , NB International Pro Book */
+
+html , body{
+    height: 100%;
+    width: 100%; 
+}
+
+#page1{
+    height: 100vh;
+    position: relative;    
+}
+
+#cursor{
+    height: 7vw;
+    width: 7vw;
+    background: #1e889bfd ;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "rej";
+    transform: translate(-50%,-50%);
+}
+
+#cursor h5{
+    font-size: 1.2vw;
+    font-weight: 500;
+}
+#page1 video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+#page1-content{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    position: relative;
+    z-index: 2;
+    z-index: 10;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction:column ;
+    justify-content: space-between;
+    padding-bottom: 1vw;
+}
+
+nav{
+    display: flex;
+    padding: 2vw 3vw;
+   
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    /* background-color: pink; */
+}
+
+nav h3{
+    font-size: 1.5vw;
+    font-weight: 500;
+    font-family: "rej";
+}
+
+
+nav h4{
+    font-size: 1.5vw;
+    font-weight: 500;
+    font-family: "rej";
+}
+
+#page1-content h1{
+ 
+    font-size: 24vw;
+    font-weight: 100;
+    line-height: 15vw;
+}
+
+#page1-content h1 span{
+    font-family:rej;
+    display: inline-block;
+}
+
+#page2{
+    height: 100vh;
+    width: 100%;
+    z-index: 3;
+    background-color: #fafbf3;
+    padding : 30px 50px
+}
+
+#page2-top{
+    display: flex;
+    justify-content: space-between;
+    font-family:'rej';
+    font-size: 1.5vw;
+}
+
+#disapper{
+    font-family: "rej";
+    margin-top: 25px;
+    font-size: 60px;
+    position: absolute;
+}
+
+
+
+#page3{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 3vw;
+  
+}
+
+#page3-top{
+    /* background-color:#ff5f38; */
+    text-align: center;
+
+}
+
+
+#page3-top h3{
+    margin-bottom: 1vw;
+    font-size: 1vw;
+    font-weight: 1000;
+    font-family: 'Montserrat';
+}
+
+#page3-top h3 span{
+    color: #fafbf3;
+    background-color:#000;
+    padding: 4px 8px;
+    border-radius: 10px;
+}
+
+#page3-top h2{
+    font-size: 3vw;
+    font-family: "Montserrat";
+}
+
+
+#page3-elements{
+    height: 80vh;
+    width: 100%;
+    /* background-color:#ff5f38; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 8vw;
+}
+
+#page3-elements .box{
+    height: 100%;
+    width: 32.5%;
+    background-color: #000000b4;
+    position: relative;
+}
+
+#page3-elements .box video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: center;
+}
+
+#page3-elements .box  img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all ease 1s;
+}
+
+#page3-elements .box:hover img{
+    opacity: 0;
+}
+
+#page4{
+    height: 100vh;
+    width: 100%;
+    padding: 3vw;
+   
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+#page4 video{
+    height:100%
+}
+
+
+#page4 svg{
+    position: absolute;
+    height: 60%;
+            transform-origin: center;
+            transition: transform 0.5s ease-in-out;
+}
+
+#page4 svg :hover{
+    transform: rotate(45deg);
+}
+
+#page5{
+    height: 100vh;
+    width: 100%;
+    padding: 4vw 1vw;
+    position: relative;
+}
+
+#page5-top  h1{
+    font-family: rej;
+    font-size: 8vw;   
+    font-weight: 500; 
+    border-bottom: 1px solid #948888;
+    width: 96%;
+    margin-left: 2%;
+}
+
+#swipperdiv{
+    height: 60vh;
+    width: 100%;
+    position: relative;
+    background-color: pink;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    width: 400px;
+    text-align: center;
+    font-size: 18px;
+    background: #912525;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width:15%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #loader{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #000;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    gap: 10px;
+  }
+
+  #loader h3{
+    font-size: 2vw;
+    font-family: "Montserrat";
+    color: rgba(218, 168, 44, 0.842);
+  }
+
+
+
+
+
+  
