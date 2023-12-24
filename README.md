@@ -37,3 +37,5 @@ This project is licensed under the [MIT License](LICENSE.md).
 Thank you for choosing Streamixr! We look forward to serving your gaming needs.
 
 Happy Gaming! 🎮✨
+
+![Streamixr Website](https://github.com/vishal-kt/streamixr/blob/main/src/web.gif)
